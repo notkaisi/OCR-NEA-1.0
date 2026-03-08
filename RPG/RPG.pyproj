@@ -1,0 +1,57 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f012ef7a-2a6f-4095-b9df-ab1e72beb4b8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>code\main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>RPG</Name>
+    <RootNamespace>RPG</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="code\main.py" />
+    <Compile Include="code\player.py" />
+    <Compile Include="code\settings.py" />
+    <Compile Include="code\sprites.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code\" />
+    <Folder Include="images\" />
+    <Folder Include="images\mizu\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\mizu\D0.png" />
+    <Content Include="images\mizu\D1.png" />
+    <Content Include="images\mizu\D2.png" />
+    <Content Include="images\mizu\L0.png" />
+    <Content Include="images\mizu\L1.png" />
+    <Content Include="images\mizu\L2.png" />
+    <Content Include="images\mizu\R0.png" />
+    <Content Include="images\mizu\R1.png" />
+    <Content Include="images\mizu\R2.png" />
+    <Content Include="images\mizu\U0.png" />
+    <Content Include="images\mizu\U1.png" />
+    <Content Include="images\mizu\U2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
